@@ -6,6 +6,8 @@ This is a min reproduction of the issue with `useTemplateRef` in Vue 3.
 
 No declaration found for vue component exposed function when using `useTemplateRef`. I cannot use <kbd>Ctrl</kbd> and **click** to go to the function declaration.
 
+[Goto code](./src/App.vue)
+
 ![img.png](docs/img.png)
 
 ![img.png](docs/img1.png)
