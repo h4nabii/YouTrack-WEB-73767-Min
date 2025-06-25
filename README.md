@@ -1,39 +1,15 @@
-# min-test
+# [YouTrack WEB-73767](https://youtrack.jetbrains.com/tag/Star-473795?preview=WEB-73767)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a min reproduction of the issue with `useTemplateRef` in Vue 3.
 
-## Recommended IDE Setup
+### Problem:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+No declaration found for vue component exposed function when using `useTemplateRef`. I cannot use <kbd>Ctrl</kbd> and **click** to go to the function declaration.
 
-## Type Support for `.vue` Imports in TS
+![img.png](docs/img.png)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+![img.png](docs/img1.png)
 
-## Customize configuration
+This operation runs well in VSCode with plugin `Vue - Official`.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+![img.png](docs/img3.png)
